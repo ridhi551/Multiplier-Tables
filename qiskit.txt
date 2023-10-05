@@ -1,0 +1,8 @@
+python
+from qiskit import QuantumCircuit, QuantumRegister, ClassicalRegister
+qr=QuantumRegister(3)
+qc=QuantumCircuit(qr)
+qc.x(qr[0])
+qc.y(qr[1])
+qc.z(qr[2])
+qc.measure(qr,range(3))
